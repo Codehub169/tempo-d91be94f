@@ -39,7 +39,7 @@ function InstallationGuidePage() {
 
   return (
     <div className="min-h-screen flex flex-col items-center p-5">
-      <div id="installation-container" className="max-w-4xl w-full bg-card-bg rounded-xl shadow-xl p-10 border border-border mt-5 mb-5 relative transition-all duration-300 ease-in-out hover:shadow-accent-glow hover:translate-y-[-2px]">
+      <div id="installation-container" className="max-w-4xl w-full bg-card-bg-transparent rounded-xl shadow-xl p-10 border border-border mt-5 mb-5 relative transition-all duration-300 ease-in-out hover:shadow-accent-glow hover:translate-y-[-2px]">
         <ProgressBar currentStep={currentStepIndex + 1} totalSteps={totalSteps} />
 
         <h1 className="text-4xl text-accent mb-5 text-center font-bold text-shadow-accent">
@@ -57,11 +57,6 @@ function InstallationGuidePage() {
               <CodeBlock command={cmdObj.cmd} explanation={cmdObj.explanation} />
             </React.Fragment>
           ))}
-
-          {/* Optional: Step Completion Button - functionality handled by CodeBlock checkboxes now */}
-          {/* <button className="block w-fit mx-auto mt-8 bg-button-bg text-text-color py-3 px-6 rounded-lg cursor-pointer text-base font-semibold transition-all duration-300 ease-in-out shadow-md hover:bg-button-hover-bg hover:translate-y-[-2px] hover:shadow-accent-glow-md">
-            Mark Step as Complete
-          </button> */}
         </div>
 
         <div className="flex justify-between mt-10 gap-5">
@@ -90,5 +85,3 @@ function InstallationGuidePage() {
     </div>
   );
 }
-
-export default InstallationGuidePage;

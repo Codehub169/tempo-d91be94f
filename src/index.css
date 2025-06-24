@@ -5,6 +5,16 @@
 /* Base styles from the design system */
 body {
   @apply bg-bg text-text font-sans;
+  /* Add subtle background pattern */
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(26, 26, 26, 0.05) 0%,
+    rgba(26, 26, 26, 0.05) 1px,
+    transparent 1px,
+    transparent 5px
+  );
+  background-size: 5px 5px;
+  background-attachment: fixed;
 }
 
 /* Custom scrollbar for a sleek look */

@@ -20,6 +20,8 @@ module.exports = {
         'accent-transparent': 'rgba(0, 255, 255, 0.1)',
         'completed-bg': 'rgba(57, 255, 20, 0.08)',
         'completed-border': '#39FF14',
+        'card-bg-transparent': 'rgba(26, 26, 26, 0.9)',
+        'code-bg-transparent': 'rgba(5, 5, 5, 0.85)'
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],

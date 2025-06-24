@@ -5,7 +5,7 @@ import CodeBlock from "../components/ui/CodeBlock";
 function PostInstallationPage() {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center p-5">
-      <div className="max-w-4xl w-full bg-card-bg rounded-xl shadow-xl p-10 text-left border border-border mb-5 transition-all duration-300 ease-in-out hover:shadow-accent-glow hover:translate-y-[-2px]">
+      <div className="max-w-4xl w-full bg-card-bg-transparent rounded-xl shadow-xl p-10 text-left border border-border mb-5 transition-all duration-300 ease-in-out hover:shadow-accent-glow hover:translate-y-[-2px]">
         <h1 className="text-4xl text-accent mb-6 font-bold text-center text-shadow-accent">
           Post-Installation & Maintenance Guide
         </h1>

@@ -8,9 +8,9 @@ const Accordion = ({ title, children }) => {
   };
 
   return (
-    <div className={`accordion-item bg-code-bg border border-border rounded-lg mb-4 overflow-hidden shadow-md transition-all duration-300 ease-in-out ${isOpen ? 'active' : ''}`}>
+    <div className={`accordion-item bg-code-bg-transparent border border-border rounded-lg mb-4 overflow-hidden shadow-md transition-all duration-300 ease-in-out ${isOpen ? 'active' : ''}`}>
       <div
-        className={`accordion-header flex justify-between items-center p-5 cursor-pointer font-semibold text-lg text-text bg-card-bg border-b border-border transition-colors duration-300 hover:bg-button-bg hover:text-accent ${isOpen ? 'bg-button-hover-bg text-bg' : ''}`}
+        className={`accordion-header flex justify-between items-center p-5 cursor-pointer font-semibold text-lg text-text bg-card-bg-transparent border-b border-border transition-colors duration-300 hover:bg-button-bg hover:text-accent ${isOpen ? 'bg-button-hover-bg text-bg' : ''}`}
         onClick={toggleAccordion}
       >
         {title}

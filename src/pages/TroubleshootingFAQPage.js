@@ -7,7 +7,7 @@ import { troubleshootingData, faqData } from '../data/faqTroubleshootingData';
 const TroubleshootingFAQPage = () => {
   return (
     <div className="min-h-screen flex flex-col items-center p-4">
-      <div className="container max-w-4xl w-full bg-card-bg rounded-xl shadow-xl p-8 md:p-10 my-8 border border-border transform transition-all duration-300 hover:shadow-accent-glow hover:scale-[1.005]">
+      <div className="container max-w-4xl w-full bg-card-bg-transparent rounded-xl shadow-xl p-8 md:p-10 my-8 border border-border transform transition-all duration-300 hover:shadow-accent-glow hover:scale-[1.005]">
         <h1 className="text-4xl md:text-5xl font-extrabold text-accent mb-6 text-center tracking-tight leading-tight drop-shadow-lg text-shadow-accent">
           Troubleshooting & FAQ
         </h1>

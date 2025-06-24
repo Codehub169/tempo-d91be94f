@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function HomePage() {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center p-5">
-      <div className="max-w-3xl w-full bg-card-bg rounded-xl shadow-xl p-10 text-center border border-border transition-all duration-300 ease-in-out hover:shadow-accent-glow hover:translate-y-[-2px]">
+      <div className="max-w-3xl w-full bg-card-bg-transparent rounded-xl shadow-xl p-10 text-center border border-border transition-all duration-300 ease-in-out hover:shadow-accent-glow hover:translate-y-[-2px]">
         <header>
           <h1 className="text-5xl text-accent mb-5 font-bold tracking-tight text-shadow-accent">
             Arch Linux Unveiled
@@ -53,5 +53,3 @@ function HomePage() {
     </div>
   );
 }
-
-export default HomePage;

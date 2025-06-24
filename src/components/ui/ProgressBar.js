@@ -4,7 +4,7 @@ const ProgressBar = ({ currentStep, totalSteps }) => {
   const progress = ((currentStep + 1) / totalSteps) * 100;
 
   return (
-    <div className="progress-bar-container w-full h-2 bg-code-bg rounded-md mb-8 overflow-hidden sticky top-0 z-10 shadow-md shadow-cyan-glow">
+    <div className="progress-bar-container w-full h-2 bg-code-bg-transparent rounded-md mb-8 overflow-hidden sticky top-0 z-10 shadow-md shadow-cyan-glow">
       <div
         className="progress-bar h-full bg-accent rounded-md transition-all duration-400 ease-in-out"
         style={{ width: `${progress}%` }}

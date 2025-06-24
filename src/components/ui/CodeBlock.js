@@ -18,13 +18,13 @@ const CodeBlock = ({ command, explanation, id, showCheckbox = true }) => {
   };
 
   return (
-    <div className={`code-block bg-code-bg rounded-lg p-4 my-5 relative border border-border shadow-md transition-all duration-200 ease-in-out ${completed ? 'completed bg-completed-bg border-completed-border shadow-green-glow' : ''}`}>
+    <div className={`code-block bg-code-bg-transparent rounded-lg p-4 my-5 relative border border-border shadow-md transition-all duration-200 ease-in-out ${completed ? 'completed bg-completed-bg border-completed-border shadow-green-glow' : ''}`}>
       {showCheckbox && (
         <div className="checklist-item flex items-start mr-4 flex-shrink-0 pt-0.5">
           <input
             type="checkbox"
             id={`checkbox-${id}`}
-            className="command-checkbox appearance-none w-5 h-5 border-2 border-accent rounded-md bg-code-bg cursor-pointer relative outline-none transition-all duration-200 ease-in-out checked:bg-success checked:border-success hover:bg-opacity-10"
+            className="command-checkbox appearance-none w-5 h-5 border-2 border-accent rounded-md bg-code-bg-transparent cursor-pointer relative outline-none transition-all duration-200 ease-in-out checked:bg-success checked:border-success hover:bg-opacity-10"
             checked={completed}
             onChange={handleCheckboxChange}
           />
