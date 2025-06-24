@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles from the design system */
+body {
+  @apply bg-dark-nebula-blue text-off-white font-inter;
+}
+
+/* Custom scrollbar for a sleek look */
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: theme('colors.space-gray');
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: theme('colors.electric-blue');
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: theme('colors.electric-blue');
+}
