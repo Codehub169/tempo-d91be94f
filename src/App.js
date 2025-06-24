@@ -14,7 +14,7 @@ function App() {
     <Router>
       <div className="min-h-screen flex flex-col">
         <Header />
-        <main className="flex-grow container mx-auto px-4 py-8 pt-20">
+        <main className="flex-grow container mx-auto px-4 sm:px-6 py-4 sm:py-8 pt-20">
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/install" element={<InstallationGuidePage />} />

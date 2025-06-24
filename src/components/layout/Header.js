@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <header className="w-full bg-card-bg-transparent shadow-lg py-4 px-6 fixed top-0 left-0 z-50 border-b border-border">
+    <header className="w-full bg-card-bg-transparent shadow-lg py-4 px-4 sm:px-6 fixed top-0 left-0 z-50 border-b border-border">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
-        <Link to="/" className="text-accent text-3xl font-bold tracking-tight mb-4 md:mb-0 hover:text-button-hover-bg transition-colors duration-300">
+        <Link to="/" className="text-accent text-2xl sm:text-3xl font-bold tracking-tight mb-4 md:mb-0 hover:text-button-hover-bg transition-colors duration-300">
           Arch Linux Unveiled
         </Link>
         <nav>
-          <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-lg font-medium">
+          <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-base sm:text-lg font-medium">
             <li>
               <Link to="/" className="text-text hover:text-accent transition-colors duration-300">
                 Home

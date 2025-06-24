@@ -18,9 +18,9 @@ const CodeBlock = ({ command, explanation, id, showCheckbox = true }) => {
   };
 
   return (
-    <div className={`code-block bg-code-bg-transparent rounded-lg p-4 my-5 relative border border-border shadow-md transition-all duration-200 ease-in-out ${completed ? 'completed bg-completed-bg border-completed-border shadow-green-glow' : ''}`}>
+    <div className={`code-block bg-code-bg-transparent rounded-lg p-4 my-5 relative border border-border shadow-md transition-all duration-200 ease-in-out ${completed ? 'completed bg-completed-bg border-completed-border shadow-green-glow' : ''} flex items-start gap-3`}>
       {showCheckbox && (
-        <div className="checklist-item flex items-start mr-4 flex-shrink-0 pt-0.5">
+        <div className="checklist-item flex-shrink-0 pt-0.5">
           <input
             type="checkbox"
             id={`checkbox-${id}`}
@@ -42,7 +42,7 @@ const CodeBlock = ({ command, explanation, id, showCheckbox = true }) => {
         )}
         {copied ? "Copied!" : "Copy"}
       </button>
-      <code id={id} className={`block font-mono text-code-text pr-12 ${showCheckbox ? 'ml-8' : ''}`}>{command}</code>
+      <code id={id} className="block font-mono text-code-text pr-12 flex-grow">{command}</code>
       <div className="command-explanation bg-accent-transparent border-l-4 border-accent p-4 rounded-lg mt-3 text-sm text-text shadow-sm">
         <strong className="text-accent text-shadow-cyan">What it does & Why it's needed:</strong> {explanation}
       </div>
