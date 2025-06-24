@@ -23,7 +23,7 @@ const TroubleshootingFAQPage = () => {
         </h2>
         <div className="space-y-4">
           {troubleshootingData.map((item, index) => (
-            <Accordion key={index} header={item.question}>
+            <Accordion key={index} title={item.question}>
               {item.answer.map((contentItem, contentIndex) => {
                 if (contentItem.type === 'paragraph') {
                   return <p key={contentIndex} className="mb-3 text-text last:mb-0">{contentItem.text}</p>;
@@ -49,7 +49,7 @@ const TroubleshootingFAQPage = () => {
         </h2>
         <div className="space-y-4">
           {faqData.map((item, index) => (
-            <Accordion key={index} header={item.question}>
+            <Accordion key={index} title={item.question}>
               {item.answer.map((contentItem, contentIndex) => {
                 if (contentItem.type === 'paragraph') {
                   return <p key={contentIndex} className="mb-3 text-text last:mb-0">{contentItem.text}</p>;
@@ -87,3 +87,5 @@ const TroubleshootingFAQPage = () => {
     </div>
   );
 };
+
+export default TroubleshootingFAQPage;

@@ -4,7 +4,7 @@
 
 /* Base styles from the design system */
 body {
-  @apply bg-bg text-text font-inter;
+  @apply bg-bg text-text font-sans;
 }
 
 /* Custom scrollbar for a sleek look */
