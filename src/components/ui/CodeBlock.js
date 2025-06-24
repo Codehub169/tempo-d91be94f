@@ -43,9 +43,11 @@ const CodeBlock = ({ command, explanation, id, showCheckbox = true }) => {
         {copied ? "Copied!" : "Copy"}
       </button>
       <code id={id} className="block font-mono text-code-text pr-12 flex-grow">{command}</code>
-      <div className="command-explanation bg-accent-transparent border-l-4 border-accent p-4 rounded-lg mt-3 text-sm text-text shadow-sm">
-        <strong className="text-accent text-shadow-cyan">What it does & Why it's needed:</strong> {explanation}
-      </div>
+      {explanation && (
+        <div className="command-explanation bg-accent-transparent border-l-4 border-accent p-4 rounded-lg mt-3 text-sm text-text shadow-sm">
+          <strong className="text-accent text-shadow-cyan">What it does & Why it's needed:</strong> {explanation}
+        </div>
+      )}
     </div>
   );
 };
