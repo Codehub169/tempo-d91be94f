@@ -1,17 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Header from '../components/layout/Header';
-import Footer from '../components/layout/Footer';
 import Accordion from '../components/ui/Accordion';
 import CodeBlock from '../components/ui/CodeBlock';
 import { troubleshootingData, faqData } from '../data/faqTroubleshootingData';
 
 const TroubleshootingFAQPage = () => {
   return (
-    <div className="min-h-screen bg-bg text-text flex flex-col items-center p-4">
-      <Header />
+    <div className="min-h-screen flex flex-col items-center p-4">
       <div className="container max-w-4xl w-full bg-card-bg rounded-xl shadow-xl p-8 md:p-10 my-8 border border-border transform transition-all duration-300 hover:shadow-accent-glow hover:scale-[1.005]">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-accent mb-6 text-center tracking-tight leading-tight drop-shadow-lg">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-accent mb-6 text-center tracking-tight leading-tight drop-shadow-lg text-shadow-accent">
           Troubleshooting & FAQ
         </h1>
         <p className="text-lg text-text mb-8 text-center max-w-2xl mx-auto">
@@ -83,7 +80,6 @@ const TroubleshootingFAQPage = () => {
           </Link>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

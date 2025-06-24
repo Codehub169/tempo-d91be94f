@@ -1,12 +1,12 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from "@react";
+import { Link } from "@react-router-dom";
 import CodeBlock from "../components/ui/CodeBlock";
 
 function PostInstallationPage() {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center p-5">
-      <div className="max-w-4xl w-full bg-card-bg rounded-xl shadow-xl p-10 text-left border border-border-color mb-5 transition-all duration-300 ease-in-out hover:shadow-accent-glow hover:translate-y-[-2px]">
-        <h1 className="text-4xl text-accent-color mb-6 font-bold text-center text-shadow-accent">
+      <div className="max-w-4xl w-full bg-card-bg rounded-xl shadow-xl p-10 text-left border border-border mb-5 transition-all duration-300 ease-in-out hover:shadow-accent-glow hover:translate-y-[-2px]">
+        <h1 className="text-4xl text-accent mb-6 font-bold text-center text-shadow-accent">
           Post-Installation & Maintenance Guide
         </h1>
         <p className="mb-4 opacity-90">
@@ -16,14 +16,14 @@ function PostInstallationPage() {
           daily driver, along with essential maintenance practices.
         </p>
 
-        <h2 className="text-3xl text-text-color mt-8 mb-4 font-semibold border-b-2 border-border-color pb-2">
+        <h2 className="text-3xl text-text mt-8 mb-4 font-semibold border-b-2 border-border pb-2">
           1. Install a Desktop Environment or Window Manager
         </h2>
         <p className="mb-4 opacity-90">
           Arch Linux comes without a graphical interface. You'll need to install
           one based on your preference.
         </p>
-        <h3 className="text-2xl text-accent-color mt-6 mb-3 font-semibold">
+        <h3 className="text-2xl text-accent mt-6 mb-3 font-semibold">
           Popular Desktop Environments:
         </h3>
         <ul className="list-disc pl-5 mb-5 opacity-90">
@@ -45,7 +45,7 @@ function PostInstallationPage() {
           command="sudo pacman -S xfce4 xfce4-goodies"
           explanation="Installs the XFCE desktop environment and common utilities."
         />
-        <h3 className="text-2xl text-accent-color mt-6 mb-3 font-semibold">
+        <h3 className="text-2xl text-accent mt-6 mb-3 font-semibold">
           Display Manager (Login Screen):
         </h3>
         <p className="mb-4 opacity-90">
@@ -71,14 +71,14 @@ function PostInstallationPage() {
           explanation="Reboots your system to apply the changes and start the graphical environment."
         />
 
-        <h2 className="text-3xl text-text-color mt-8 mb-4 font-semibold border-b-2 border-border-color pb-2">
+        <h2 className="text-3xl text-text mt-8 mb-4 font-semibold border-b-2 border-border pb-2">
           2. Network Management
         </h2>
         <p className="mb-4 opacity-90">
           For persistent network connectivity after reboot, you'll need a network
           manager.
         </p>
-        <h3 className="text-2xl text-accent-color mt-6 mb-3 font-semibold">
+        <h3 className="text-2xl text-accent mt-6 mb-3 font-semibold">
           NetworkManager (Recommended for most users):
         </h3>
         <CodeBlock
@@ -91,7 +91,7 @@ function PostInstallationPage() {
           explanation="Enables NetworkManager to start on boot and immediately starts the service."
         />
 
-        <h2 className="text-3xl text-text-color mt-8 mb-4 font-semibold border-b-2 border-border-color pb-2">
+        <h2 className="text-3xl text-text mt-8 mb-4 font-semibold border-b-2 border-border pb-2">
           3. Audio Configuration
         </h2>
         <p className="mb-4 opacity-90">
@@ -108,7 +108,7 @@ function PostInstallationPage() {
           Reboot or log out/in for changes to take effect.
         </p>
 
-        <h2 className="text-3xl text-text-color mt-8 mb-4 font-semibold border-b-2 border-border-color pb-2">
+        <h2 className="text-3xl text-text mt-8 mb-4 font-semibold border-b-2 border-border pb-2">
           4. Install Common Software
         </h2>
         <p className="mb-4 opacity-90">
@@ -124,14 +124,14 @@ function PostInstallationPage() {
           tool).
         </p>
 
-        <h2 className="text-3xl text-text-color mt-8 mb-4 font-semibold border-b-2 border-border-color pb-2">
+        <h2 className="text-3xl text-text mt-8 mb-4 font-semibold border-b-2 border-border pb-2">
           5. System Maintenance
         </h2>
         <p className="mb-4 opacity-90">
           Arch Linux is a rolling release, meaning continuous updates. Regular
           maintenance is key.
         </p>
-        <h3 className="text-2xl text-accent-color mt-6 mb-3 font-semibold">
+        <h3 className="text-2xl text-accent mt-6 mb-3 font-semibold">
           Update System:
         </h3>
         <p className="mb-4 opacity-90">
@@ -147,7 +147,7 @@ function PostInstallationPage() {
           all out-of-date packages (`-u`).
         </p>
 
-        <h3 className="text-2xl text-accent-color mt-6 mb-3 font-semibold">
+        <h3 className="text-2xl text-accent mt-6 mb-3 font-semibold">
           Clean Package Cache:
         </h3>
         <p className="mb-4 opacity-90">
@@ -170,7 +170,7 @@ function PostInstallationPage() {
           files. Use with caution.
         </p>
 
-        <h3 className="text-2xl text-accent-color mt-6 mb-3 font-semibold">
+        <h3 className="text-2xl text-accent mt-6 mb-3 font-semibold">
           Install an AUR Helper (Optional but Recommended):
         </h3>
         <p className="mb-4 opacity-90">
@@ -193,7 +193,7 @@ function PostInstallationPage() {
             href="https://wiki.archlinux.org/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-accent-color no-underline hover:underline"
+            className="text-accent no-underline hover:underline"
           >
             Arch Wiki
           </a>{" "}
@@ -203,25 +203,25 @@ function PostInstallationPage() {
         <div className="nav-links mt-10 flex justify-center gap-5 flex-wrap">
           <Link
             to="/"
-            className="text-text-color no-underline font-semibold text-base py-3 px-5 rounded-lg bg-button-bg transition-all duration-300 ease-in-out shadow-md hover:bg-button-hover-bg hover:translate-y-[-2px] hover:shadow-accent-glow-md"
+            className="text-text no-underline font-semibold text-base py-3 px-5 rounded-lg bg-button-bg transition-all duration-300 ease-in-out shadow-md hover:bg-button-hover-bg hover:translate-y-[-2px] hover:shadow-accent-glow-md"
           >
             Back to Home
           </Link>
           <Link
             to="/install"
-            className="text-text-color no-underline font-semibold text-base py-3 px-5 rounded-lg bg-button-bg transition-all duration-300 ease-in-out shadow-md hover:bg-button-hover-bg hover:translate-y-[-2px] hover:shadow-accent-glow-md"
+            className="text-text no-underline font-semibold text-base py-3 px-5 rounded-lg bg-button-bg transition-all duration-300 ease-in-out shadow-md hover:bg-button-hover-bg hover:translate-y-[-2px] hover:shadow-accent-glow-md"
           >
             Installation Guide
           </Link>
           <Link
             to="/prerequisites"
-            className="text-text-color no-underline font-semibold text-base py-3 px-5 rounded-lg bg-button-bg transition-all duration-300 ease-in-out shadow-md hover:bg-button-hover-bg hover:translate-y-[-2px] hover:shadow-accent-glow-md"
+            className="text-text no-underline font-semibold text-base py-3 px-5 rounded-lg bg-button-bg transition-all duration-300 ease-in-out shadow-md hover:bg-button-hover-bg hover:translate-y-[-2px] hover:shadow-accent-glow-md"
           >
             Prerequisites & Tools
           </Link>
           <Link
             to="/faq-troubleshooting"
-            className="text-text-color no-underline font-semibold text-base py-3 px-5 rounded-lg bg-button-bg transition-all duration-300 ease-in-out shadow-md hover:bg-button-hover-bg hover:translate-y-[-2px] hover:shadow-accent-glow-md"
+            className="text-text no-underline font-semibold text-base py-3 px-5 rounded-lg bg-button-bg transition-all duration-300 ease-in-out shadow-md hover:bg-button-hover-bg hover:translate-y-[-2px] hover:shadow-accent-glow-md"
           >
             Troubleshooting & FAQ
           </Link>

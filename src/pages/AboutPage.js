@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 function AboutPage() {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center p-5">
-      <div className="max-w-3xl w-full bg-card-bg rounded-xl shadow-xl p-10 text-left border border-border-color transition-all duration-300 ease-in-out hover:shadow-accent-glow hover:translate-y-[-2px]">
-        <h1 className="text-4xl text-accent-color mb-6 font-bold text-center text-shadow-accent">
+      <div className="max-w-3xl w-full bg-card-bg rounded-xl shadow-xl p-10 text-left border border-border transition-all duration-300 ease-in-out hover:shadow-accent-glow hover:translate-y-[-2px]">
+        <h1 className="text-4xl text-accent mb-6 font-bold text-center text-shadow-accent">
           About This Guide
         </h1>
         <p className="mb-4 opacity-90">
@@ -15,7 +15,7 @@ function AboutPage() {
           reference for experienced users.
         </p>
 
-        <h2 className="text-2xl text-accent-color mt-8 mb-4 font-semibold border-b border-border-color pb-1">
+        <h2 className="text-2xl text-accent mt-8 mb-4 font-semibold border-b border-border pb-1">
           Purpose & Scope
         </h2>
         <p className="mb-4 opacity-90">
@@ -38,7 +38,7 @@ function AboutPage() {
           <li className="mb-2">Kernel customization.</li>
         </ul>
 
-        <h2 className="text-2xl text-accent-color mt-8 mb-4 font-semibold border-b border-border-color pb-1">
+        <h2 className="text-2xl text-accent mt-8 mb-4 font-semibold border-b border-border pb-1">
           Acknowledgments
         </h2>
         <p className="mb-4 opacity-90">
@@ -49,15 +49,15 @@ function AboutPage() {
             href="https://wiki.archlinux.org/index.php/Installation_guide"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-accent-color no-underline hover:underline"
+            className="text-accent no-underline hover:underline"
           >
             Arch Wiki
           </a>{" "}
           for the most up-to-date and comprehensive information.
         </p>
 
-        <div className="bg-accent-transparent border-l-4 border-accent-color p-5 rounded-lg mt-8 text-sm shadow-md">
-          <h2 className="text-xl text-accent-color mb-3 font-semibold pb-0 border-b-0 text-shadow-accent">
+        <div className="bg-accent-transparent border-l-4 border-accent p-5 rounded-lg mt-8 text-sm shadow-md">
+          <h2 className="text-xl text-accent mb-3 font-semibold pb-0 border-b-0 text-shadow-accent">
             Important Disclaimer
           </h2>
           <p className="mb-3 opacity-90">
@@ -82,25 +82,25 @@ function AboutPage() {
         <div className="nav-links mt-10 flex justify-center gap-5 flex-wrap">
           <Link
             to="/"
-            className="text-text-color no-underline font-semibold text-base py-3 px-5 rounded-lg bg-button-bg transition-all duration-300 ease-in-out shadow-md hover:bg-button-hover-bg hover:translate-y-[-2px] hover:shadow-accent-glow-md"
+            className="text-text no-underline font-semibold text-base py-3 px-5 rounded-lg bg-button-bg transition-all duration-300 ease-in-out shadow-md hover:bg-button-hover-bg hover:translate-y-[-2px] hover:shadow-accent-glow-md"
           >
             Back to Home
           </Link>
           <Link
             to="/install"
-            className="text-text-color no-underline font-semibold text-base py-3 px-5 rounded-lg bg-button-bg transition-all duration-300 ease-in-out shadow-md hover:bg-button-hover-bg hover:translate-y-[-2px] hover:shadow-accent-glow-md"
+            className="text-text no-underline font-semibold text-base py-3 px-5 rounded-lg bg-button-bg transition-all duration-300 ease-in-out shadow-md hover:bg-button-hover-bg hover:translate-y-[-2px] hover:shadow-accent-glow-md"
           >
             Start Installation
           </Link>
           <Link
             to="/post-install"
-            className="text-text-color no-underline font-semibold text-base py-3 px-5 rounded-lg bg-button-bg transition-all duration-300 ease-in-out shadow-md hover:bg-button-hover-bg hover:translate-y-[-2px] hover:shadow-accent-glow-md"
+            className="text-text no-underline font-semibold text-base py-3 px-5 rounded-lg bg-button-bg transition-all duration-300 ease-in-out shadow-md hover:bg-button-hover-bg hover:translate-y-[-2px] hover:shadow-accent-glow-md"
           >
             Post-Installation Guide
           </Link>
           <Link
             to="/faq-troubleshooting"
-            className="text-text-color no-underline font-semibold text-base py-3 px-5 rounded-lg bg-button-bg transition-all duration-300 ease-in-out shadow-md hover:bg-button-hover-bg hover:translate-y-[-2px] hover:shadow-accent-glow-md"
+            className="text-text no-underline font-semibold text-base py-3 px-5 rounded-lg bg-button-bg transition-all duration-300 ease-in-out shadow-md hover:bg-button-hover-bg hover:translate-y-[-2px] hover:shadow-accent-glow-md"
           >
             Troubleshooting & FAQ
           </Link>
