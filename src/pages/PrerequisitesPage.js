@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function PrerequisitesPage() {
+export default function PrerequisitesPage() {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center p-5">
       <div className="max-w-3xl w-full bg-card-bg-transparent rounded-xl shadow-xl p-10 text-left border border-border transition-all duration-300 ease-in-out hover:shadow-accent-glow hover:translate-y-[-2px]">

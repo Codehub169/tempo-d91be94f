@@ -4,7 +4,7 @@ import CodeBlock from "../components/ui/CodeBlock";
 import ProgressBar from "../components/ui/ProgressBar";
 import { installationSteps } from "../data/installationSteps";
 
-function InstallationGuidePage() {
+export default function InstallationGuidePage() {
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
   const totalSteps = installationSteps.length;
 
