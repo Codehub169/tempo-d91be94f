@@ -34,7 +34,7 @@ module.exports = {
       directory: path.join(__dirname, 'build'),
     },
     compress: true,
-    port: 3000,
+    port: 9000,
     open: true,
     historyApiFallback: true, // For React Router
   },
